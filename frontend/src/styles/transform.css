@@ -1,0 +1,13 @@
+.Transform{
+    width: 80%;
+    min-width: 600px;
+}
+.styling-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 30%;
+}

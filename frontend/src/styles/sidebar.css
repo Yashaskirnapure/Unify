@@ -1,0 +1,62 @@
+.Sidebar {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-width: 500px;
+    min-width: 250px;
+
+    box-shadow: 1px 1px 3px rgb(102, 102, 102);
+}
+
+.name-tag{
+    padding: 20px 15px;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(27, 27, 56);
+}
+.name-span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(27, 27, 56);
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.logout {
+    display: block;
+
+    background-color: rgb(250, 84, 84);
+    color: white;
+    text-align: center;
+
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: auto;
+
+    border-radius: 10px;
+}
+
+.sidebar-item:hover {
+    cursor: pointer;
+    background-color: rgb(224, 232, 240);
+}
+
+.logout:hover {
+    background-color: rgb(250, 69, 69);
+}
+
+.delete-account{
+    color: rgb(250, 69, 69);
+}
