@@ -14,7 +14,6 @@ function Login() {
     const [clicked, setClicked] = useState(false);
     const [message, setMessage] = useState("");
     const navigate = useNavigate();
-    const dispatch = useDispatch();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -39,10 +38,11 @@ function Login() {
 
         try{
             const response = await API.post('/login', formData);
-            localStorage.setItem('fullname', response.data.fullName);
-            localStorage.setItem('email', response.data.email);
             
-            dispatch(login());
+            sessionStorage.setItem('fullname', response.data.fullName);
+            sessionStorage.setItem('email', response.data.email);
+            sessionStorage.setItem('authenticated', response.data.authenticated);
+            
             navigate('/catalog');
         }catch(err){
             setMessage(err.response.data.message);

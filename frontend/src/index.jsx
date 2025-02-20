@@ -23,7 +23,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/login" element={<Login/>}/>
+          <Route path="/login" element={<Login/>}/> 
           <Route path="/signup" element={<Signup/>}/>
           <Route path='/forgot-password' element={<ForgotPassword/>  }/>
           <Route path='/reset-password' element={<ResetPassword/>} />
